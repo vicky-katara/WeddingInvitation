@@ -1,0 +1,51 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage[dvipsnames]{xcolor} 
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{sanskrit}
+\usetikzlibrary{shapes.geometric,calc}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\newfontfamily\devanagarifont[Scale=MatchUppercase]{Devanagari MT}
+
+\begin{document}
+\pagecolor{fondpaille}
+\color{Maroon} 
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]   
+\node[text width=12cm,align=center](Text){%
+Nisha and Vicky joyfully invite your gracious presence \\
+at the celebration of their marriage. Please honour us \\
+with your company.\\
+\vspace{12pt}
+Time: 4 PM - October 18th, 2018\\
+\vspace{12pt}
+Location: 
+Avion Hotel\\
+Opposite Mumbai Domestic Airport\\
+Airport Road, Vile Parle East\\
+Mumbai\\
+\vspace{12pt}
+\begin{tikzpicture}
+\node (A) at (-4,0) {};  
+\draw [fill=Maroon!20]  (A) circle (2pt);
+\end{tikzpicture}
+
+\vspace{12pt}
+\foreignlanguage{sanskrit}{बॉलीवुड}
+} ;
+\node[shift={(-1cm,1cm)},anchor=north west](CNW)  at (Text.north west)
+               {\pgfornament[width=2cm]{61}};
+\node[shift={(1cm,1cm)},anchor=north east](CNE)   at (Text.north east)
+               {\pgfornament[width=2cm,symmetry=v]{61}}; 
+\node[shift={(-1cm,-1cm)},anchor=south west](CSW) at (Text.south west)
+               {\pgfornament[width=2cm,symmetry=h]{61}}; 
+\node[shift={(1cm,-1cm)},anchor=south east](CSE)  at (Text.south east)   
+               {\pgfornament[width=2cm,symmetry=c]{61}};  
+\pgfornamenthline{CNW}{CNE}{north}{87}
+\pgfornamenthline{CSW}{CSE}{south}{87}
+\pgfornamentvline{CNW}{CSW}{west}{87}
+\pgfornamentvline{CNE}{CSE}{east}{87}
+\end{tikzpicture}
+\end{document}
