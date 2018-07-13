@@ -1,4 +1,4 @@
-\documentclass{scrartcl}
+\documentclass{standalone}
 \usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc} 
 \usepackage[dvipsnames]{xcolor} 
@@ -14,6 +14,7 @@
 \begin{document}
 \pagecolor{fondpaille}
 \color{Maroon} 
+\vspace{12pt}
 \begin{tikzpicture}[every node/.style={inner sep=0pt}]
 \node[text width=12cm,align=center](Text){%
 Nisha Chandwani and Vicky Katara joyfully invite your gracious presence at the celebration of their marriage. Please honour us with your company.\\
@@ -35,9 +36,9 @@ Mumbai\\
 \foreignlanguage{sanskrit}{
 निशा चंदवानी और विक्की कटारा खुशी-खुशी उनकी शादी के शुभ उत्सव पर आपको आमंत्रित करते हैं। वे उम्मीद करते हैं कि आप उन्हें अपनी उपस्थिति से आशीर्वाद देंगे। \\}
 \vspace{12pt}
-\foreignlanguage{sanskrit}{समय}: 4PM, \foreignlanguage{sanskrit}{अक्टूबर} 19th, 2018\\
+\foreignlanguage{sanskrit}{\textbf{समय}}: 4PM, \foreignlanguage{sanskrit}{अक्टूबर} 19th, 2018\\
 \vspace{12pt}
-\foreignlanguage{sanskrit}{स्थान}: Avion Hotel\\
+\foreignlanguage{sanskrit}{\textbf{स्थान}}: Avion Hotel\\
 \foreignlanguage{sanskrit}{मुंबई डोमेस्टिक एयरपोर्ट}\\
 \foreignlanguage{sanskrit}{वीले पार्ले ईस्ट}\\
 \foreignlanguage{sanskrit}{मुंबई}\\
@@ -55,4 +56,5 @@ Mumbai\\
 \pgfornamentvline{CNW}{CSW}{west}{87}
 \pgfornamentvline{CNE}{CSE}{east}{87}
 \end{tikzpicture}
+\vspace{12pt}
 \end{document}
