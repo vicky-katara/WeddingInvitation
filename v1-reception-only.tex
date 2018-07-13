@@ -4,6 +4,7 @@
 \usepackage[dvipsnames]{xcolor} 
 \usepackage[object=vectorian]{pgfornament}
 \usepackage{polyglossia}
+\usepackage[none]{hyphenat}
 \setdefaultlanguage{english}
 \setotherlanguage{sanskrit}
 \usetikzlibrary{shapes.geometric,calc}
@@ -13,17 +14,15 @@
 \begin{document}
 \pagecolor{fondpaille}
 \color{Maroon} 
-\begin{tikzpicture}[every node/.style={inner sep=0pt}]   
+\begin{tikzpicture}[every node/.style={inner sep=0pt}]
 \node[text width=12cm,align=center](Text){%
-Nisha and Vicky joyfully invite your gracious presence \\
-at the celebration of their marriage. Please honour us \\
-with your company.\\
+Nisha Chandwani and Vicky Katara joyfully invite your gracious presence at the celebration of their marriage. Please honour us with your company.\\
 \vspace{12pt}
-Time: 4 PM - October 18th, 2018\\
+\textbf{Time}: 4 PM - October 19th, 2018\\
 \vspace{12pt}
-Location: 
+\textbf{Location}: 
 Avion Hotel\\
-Opposite Mumbai Domestic Airport\\
+Mumbai Domestic Airport\\
 Airport Road, Vile Parle East\\
 Mumbai\\
 \vspace{12pt}
@@ -33,7 +32,15 @@ Mumbai\\
 \end{tikzpicture}
 
 \vspace{12pt}
-\foreignlanguage{sanskrit}{बॉलीवुड}
+\foreignlanguage{sanskrit}{
+निशा चंदवानी और विक्की कटारा खुशी-खुशी उनकी शादी के शुभ उत्सव पर आपको आमंत्रित करते हैं। वे उम्मीद करते हैं कि आप उन्हें अपनी उपस्थिति से आशीर्वाद देंगे। \\}
+\vspace{12pt}
+\foreignlanguage{sanskrit}{समय}: 4PM, \foreignlanguage{sanskrit}{अक्टूबर} 19th, 2018\\
+\vspace{12pt}
+\foreignlanguage{sanskrit}{स्थान}: Avion Hotel\\
+\foreignlanguage{sanskrit}{मुंबई डोमेस्टिक एयरपोर्ट}\\
+\foreignlanguage{sanskrit}{वीले पार्ले ईस्ट}\\
+\foreignlanguage{sanskrit}{मुंबई}\\
 } ;
 \node[shift={(-1cm,1cm)},anchor=north west](CNW)  at (Text.north west)
                {\pgfornament[width=2cm]{61}};
