@@ -5,6 +5,7 @@
 \usepackage[object=vectorian]{pgfornament}
 \usepackage{polyglossia}
 \usepackage[none]{hyphenat}
+\usepackage{caption}
 \setdefaultlanguage{english}
 \setotherlanguage{sanskrit}
 \usetikzlibrary{shapes.geometric,calc}
@@ -13,13 +14,45 @@
 
 \begin{document}
 \pagecolor{fondpaille}
-\color{Maroon} 
+\color{Maroon}
 \vspace{12pt}
 \begin{tikzpicture}[every node/.style={inner sep=0pt}]
 \node[text width=12cm,align=center](Text){%
+\\
 Nisha Chandwani and Vicky Katara joyfully invite your gracious presence at the celebration of their marriage. Please honour us with your company.\\
 \vspace{12pt}
-\textbf{Time}: (Engagement) 7 PM - October 18th, 2018;\\ (Reception) 8 PM - October 19th, 2018\\
+
+\begin{table}[!htb]
+\begin{minipage}{.5\linewidth}
+\color{Maroon}
+\begin{tabular}{ r l }
+\multicolumn{2}{c}{\textbf{18th October, 2018}} \\
+\hline\\[-1em]
+1 PM & Lunch \\
+2 PM & Mehendi \\
+4 PM & Tea \& Snacks\\
+7 PM & Sangeet, Engagement Dinner\\
+& \\
+\end{tabular}
+\end{minipage}%
+\color{Maroon}
+\hspace{0.2cm}
+\begin{minipage}{.5\linewidth}
+%\centering
+\begin{tabular}{ r l }
+\multicolumn{2}{c}{\textbf{19th October, 2018}} \\
+\hline\\[-1em]
+10.15 AM & Satt Puja (Groom) \\
+11.30 AM & Satt Puja (Bride) \\
+4.30 PM & Baraat \& Pheras\\
+5 PM & Tea \& Snacks\\
+8 PM & Reception Dinner\\
+\end{tabular}
+\end{minipage}
+\end{table}
+
+\color{Maroon}
+
 \vspace{12pt}
 \textbf{Location}: 
 Avion Hotel\\
@@ -36,7 +69,35 @@ Mumbai\\
 \foreignlanguage{sanskrit}{
 निशा चंदवानी और विक्की कटारा खुशी-खुशी उनकी शादी के शुभ उत्सव पर आपको आमंत्रित करते हैं। वे उम्मीद करते हैं कि आप उन्हें अपनी उपस्थिति से आशीर्वाद देंगे। \\}
 \vspace{12pt}
-\foreignlanguage{sanskrit}{\textbf{समय}}: (\foreignlanguage{sanskrit}{सगाई}) \foreignlanguage{sanskrit}{शाम ७ बजे}, \foreignlanguage{sanskrit}{अक्टूबर १८, २०१८}; (\foreignlanguage{sanskrit}{शादी समारोह}) \foreignlanguage{sanskrit}{शाम ८ बजे}, \foreignlanguage{sanskrit}{अक्टूबर १९, २०१८} \\
+
+\begin{table}[!htb]
+	\begin{minipage}{.5\linewidth}
+		\begin{tabular}{ r l }
+			\multicolumn{2}{c}{\foreignlanguage{sanskrit}{अक्टूबर १८, २०१८}} \\
+			\hline\\[-1em]
+			\foreignlanguage{sanskrit}{दोपहर १ बजे} & \foreignlanguage{sanskrit}{भोजन} \\
+			\foreignlanguage{sanskrit}{दोपहर २ बजे} & \foreignlanguage{sanskrit}{मेहंदी} \\
+			\foreignlanguage{sanskrit}{शाम ४ बजे} & \foreignlanguage{sanskrit}{चाय और नाश्ता}\\
+			\foreignlanguage{sanskrit}{शाम ७ बजे} & \foreignlanguage{sanskrit}{संगीत, सगाई और खाना}\\
+			& \\
+		\end{tabular}
+	\end{minipage}%
+	\begin{minipage}{.5\linewidth}
+		\begin{tabular}{ r l }
+			\multicolumn{2}{c}{\foreignlanguage{sanskrit}{अक्टूबर १९, २०१८}} \\
+			\hline\\[-1em]
+			\foreignlanguage{sanskrit}{सुबह १०.१५ बजे} & \foreignlanguage{sanskrit}{सत्त पूजा (दूल्हा)} \\
+			\foreignlanguage{sanskrit}{सुबह ११.३० बजे} & \foreignlanguage{sanskrit}{सत्त पूजा (दुल्हन)} \\
+			\foreignlanguage{sanskrit}{शाम ४.३० बजे} & \foreignlanguage{sanskrit}{बारात और फेरे} \\
+			\foreignlanguage{sanskrit}{शाम ५ बजे} & \foreignlanguage{sanskrit}{चाय और नाश्ता} \\
+			\foreignlanguage{sanskrit}{शाम ८ बजे} & \foreignlanguage{sanskrit}{रिसेप्शन} \\
+		\end{tabular}
+	\end{minipage}
+\end{table}
+
+
+
+
 \vspace{12pt}
 \foreignlanguage{sanskrit}{\textbf{स्थान}}: \foreignlanguage{sanskrit}{एवियन होटेल}\\
 \foreignlanguage{sanskrit}{मुंबई डोमेस्टिक एयरपोर्ट}\\
